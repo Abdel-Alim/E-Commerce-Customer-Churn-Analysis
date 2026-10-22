@@ -7,61 +7,74 @@
 <p align="center">
   <img src="https://img.shields.io/badge/SQL-Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" alt="SQL Server" />
   <img src="https://img.shields.io/badge/Power-BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=000000" alt="Power BI" />
-  <img src="https://img.shields.io/badge/Business-Intelligence-4B8BBE?style=for-the-badge" alt="Business Intelligence" />
   <img src="https://img.shields.io/badge/Customer-Churn-FF6B6B?style=for-the-badge" alt="Customer Churn" />
+  <img src="https://img.shields.io/badge/Business-Intelligence-4B8BBE?style=for-the-badge" alt="Business Intelligence" />
 </p>
 
 <p align="center">
-  <b>SQL Server + Power BI | Business Intelligence | Retention Analytics</b>
+  <b>SQL Server + Power BI | Customer Retention Analytics | Executive Dashboard</b>
 </p>
 
 <p align="center">
-  Turning customer behavior data into actionable retention strategies and executive-ready insights.
+  <i>Turning customer behavior data into actionable retention strategies and data-driven business decisions.</i>
 </p>
 
 ---
 
 ## Overview
 
-This project analyzes customer churn in an e-commerce business using SQL Server for data preparation and analysis, and Power BI for an executive dashboard and business storytelling.
+This project analyzes customer churn in an e-commerce business using SQL Server for data preparation and advanced analysis, and Power BI for an executive dashboard and business storytelling.
 
-The goal is to identify:
+The main goal is to identify:
 
 - customers most likely to churn
 - product categories with the highest churn risk
 - the impact of complaints on churn
-- churn patterns across customer segments
-- key retention opportunities for the business
+- churn patterns by customer segment
+- the strongest retention opportunities for business growth
 
 ---
 
-## Business Problem
+## Why this project matters
 
-Customer churn is one of the biggest threats to e-commerce growth and profitability. When customers leave, businesses face:
+Customer churn directly threatens revenue, customer lifetime value, and profitability. Businesses lose not only sales, but also trust, retention efficiency, and growth potential.
 
-- lower revenue and lifetime value
-- higher acquisition costs
-- reduced loyalty and trust
-- weaker customer retention performance
+This project helps answer three critical questions:
 
-This project helps answer: who is churning, why they are churning, and where retention efforts should be prioritized.
-
----
-
-## Project Objectives
-
-1. Clean and structure the raw customer dataset
-2. Measure overall churn rate
-3. Analyze churn by product category
-4. Evaluate the effect of complaints on churn
-5. Compare churn across marital status groups
-6. Investigate satisfaction score behavior
-7. Build a Power BI executive dashboard
-8. Deliver business recommendations for retention strategy
+1. Who is likely to churn?
+2. Why are they leaving?
+3. Where should retention efforts be focused first?
 
 ---
 
-## Solution Flow
+## Business problem
+
+E-commerce companies face rising pressure to retain customers in competitive markets. Churn often results from a combination of:
+
+- product dissatisfaction
+- poor customer support experience
+- weak post-purchase engagement
+- category-specific risk factors
+- satisfaction gaps not visible without analysis
+
+This dashboard helps business teams convert raw customer signals into practical retention actions.
+
+---
+
+## Objectives
+
+- Clean and standardize customer data
+- Measure overall churn rate
+- Analyze churn by product category
+- Assess the effect of complaints on churn
+- Compare churn across customer groups
+- Understand satisfaction score behavior
+- Build an executive-ready Power BI dashboard
+- Recommend retention strategies backed by evidence
+
+---
+
+## Solution flow
 
 ```mermaid
 flowchart LR
@@ -75,98 +88,41 @@ flowchart LR
 
 ---
 
-## Technologies Used
-
-| Tool | Purpose |
-|---|---|
-| SQL Server | Data cleaning, transformation, and analytical queries |
-| SSMS | SQL development and testing |
-| Power BI | Dashboarding and business intelligence |
-| DAX | Performance metrics and calculations |
-| Power Query | Data shaping and transformation |
-| GitHub | Project documentation and portfolio sharing |
-
----
-
-## Repository Structure
-
-```text
-E-Commerce-Customer-Churn-Analysis/
-├── README.md
-├── Dashboard.png
-├── Ecommerce_Churn_Analysis.sql
-├── E-Commerce Customer Churn Dashboard.pbix
-└── dataset/
-```
-
-### File Descriptions
-
-- `Ecommerce_Churn_Analysis.sql`  
-  Contains the SQL workflow for data cleaning, customer segmentation, churn calculations, and exploratory analysis.
-
-- `E-Commerce Customer Churn Dashboard.pbix`  
-  Power BI file with interactive visuals and KPI tracking.
-
-- `Dashboard.png`  
-  Preview image of the final dashboard.
-
----
-
-## Key Findings
-
-### 1. Complaint status strongly affects churn
-Customers with complaints show a noticeably higher churn rate compared with customers without complaints.
-
-### 2. Product category matters
-The analysis highlights that specific categories, especially Mobile Phone, show elevated churn risk.
-
-### 3. Marital status segment is relevant
-Certain customer groups, such as single customers, show stronger churn tendency and represent valuable retention opportunities.
-
-### 4. Satisfaction alone does not explain churn
-Some customers with relatively high satisfaction still churn, suggesting that other drivers such as pricing, service quality, and competition may be involved.
-
----
-
-## Dashboard Highlights
+## Dashboard highlights
 
 The final dashboard includes:
 
 - total customers and churned customers
 - overall churn rate
 - product category churn comparison
-- complaint vs non-complaint churn analysis
+- complaint vs non-complaint analysis
 - marital status segmentation
-- satisfaction score analysis
-- executive insight cards and recommendations
-
----
-
-## Dashboard Preview
+- satisfaction score overview
+- executive KPI cards and recommendations
 
 <p align="center">
-  <img src="Dashboard.png" alt="E-Commerce Customer Churn Dashboard" width="100%" />
+  <img src="Dashboard.png" alt="Power BI dashboard preview" width="100%" />
 </p>
 
 ---
 
-## Executive Insights
+## Key insights
 
-### Insight 1: Complaints are a churn warning sign
-Complaint handling should be treated as a retention priority. Fast response and recovery actions can reduce churn risk.
+### 1. Complaints are a strong churn signal
+Customers with complaints show a significantly higher churn rate than customers without complaints.
 
-### Insight 2: Mobile Phone is a high-risk category
-This category should be reviewed from a product support, delivery, and post-sale experience perspective.
+### 2. Some product categories are riskier than others
+The analysis highlights categories such as Mobile Phone as especially vulnerable to churn.
 
-### Insight 3: Retention campaigns should target high-risk segments
-Customer groups showing elevated churn should receive personalized campaigns, loyalty offers, and proactive engagement.
+### 3. Customer segment matters
+Certain groups, including single customers, show stronger churn tendencies and represent priority opportunities for engagement.
 
-### Insight 4: Satisfaction should be analyzed with additional factors
-The relationship between satisfaction and churn is not linear; business teams should consider expectations, service quality, and competitor offers.
+### 4. Satisfaction alone does not explain churn
+Some satisfied customers still churn, indicating that other factors such as service quality, pricing pressures, delivery experience, and competitive alternatives also influence retention.
 
 ---
 
-## Example SQL Logic
+## Example SQL logic
 
 ```sql
 SELECT 
@@ -191,38 +147,49 @@ GROUP BY ChurnStatus;
 
 ---
 
-## Skills Demonstrated
+## Tech stack
 
-### SQL
-- Data cleaning
-- T-SQL queries
-- conditional logic
-- aggregation and grouping
-- churn analysis
-- exploratory data analysis
-
-### Power BI
-- KPI design
-- business dashboard development
-- data visualization
-- executive reporting
-- decision-focused storytelling
-
-### Business Intelligence
-- customer segmentation
-- churn analysis
-- retention strategy
-- insight generation
-- action-oriented recommendations
+| Tool | Purpose |
+|---|---|
+| SQL Server | Data cleaning, transformation, and churn analysis |
+| SSMS | Query development and validation |
+| Power BI | Dashboarding and executive storytelling |
+| DAX | KPI logic and performance measures |
+| Power Query | Data shaping and preparation |
+| GitHub | Portfolio and project documentation |
 
 ---
 
-## Recommended Next Steps
+## Repository structure
+
+```text
+E-Commerce-Customer-Churn-Analysis/
+├── README.md
+├── Dashboard.png
+├── Ecommerce_Churn_Analysis.sql
+├── E-Commerce Customer Churn Dashboard.pbix
+└── dataset/
+```
+
+### File descriptions
+
+- `Ecommerce_Churn_Analysis.sql`  
+  Contains the SQL workflow for data cleaning, churn calculation, segmentation, and exploratory analysis.
+
+- `E-Commerce Customer Churn Dashboard.pbix`  
+  Power BI report with interactive visuals and executive KPIs.
+
+- `Dashboard.png`  
+  Preview of the final dashboard for quick presentation and portfolio use.
+
+---
+
+## Recommended next steps
 
 This project can be extended with:
 
 - customer lifetime value analysis
-- revenue at risk metrics
+- revenue-at-risk calculations
 - churn prediction model
 - RFM segmentation
 - cohort analysis
@@ -230,9 +197,9 @@ This project can be extended with:
 
 ---
 
-## Final Recommendation
+## Final recommendation
 
-The strongest retention strategy is to focus on customers with complaints and high-risk product segments first, while building a continuous monitoring system in Power BI to detect churn trends early.
+The most effective retention strategy is to prioritize customers with complaints and high-risk product categories, while building a continuous Power BI monitoring system to identify churn trends early.
 
 ---
 
